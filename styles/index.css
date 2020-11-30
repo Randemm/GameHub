@@ -2,13 +2,17 @@
 	font-family: Raleway;
 	src: url("https://fonts.google.com/specimen/Raleway");
 }
+
+html,
 body {
+	max-width: 100%;
+	overflow-x: hidden;
 	background-color: #f4f6fc;
 	margin: 0;
 	padding: 0;
 }
 main {
-	margin: 0px 206px 0px 200px;
+	margin: 0 12% 0 12%;
 }
 
 h1 {
@@ -19,26 +23,87 @@ h1 {
 	color: #1b203d;
 }
 
-header {
-	height: 200px;
+input {
 	width: 100%;
-	padding: 2px 206px 0px 200px;
+	height: 40px;
+	margin-top: 40px;
+	font-size: 30px;
+}
+
+.logo {
+	grid-area: logo;
+	padding-top: 6px;
+	max-width: 80px;
+}
+
+.search {
+	grid-area: search;
+}
+.profile {
+	grid-area: user;
+}
+.navbar {
+	grid-area: navbar;
+}
+
+header {
+	display: grid;
+	grid-template-areas:
+		"logo search search search user"
+		"navbar navbar navbar navbar navbar";
+	grid-gap: 2px;
+	max-width: 100%;
+	padding: 0 12% 0 12%;
 	background-color: #859fa8;
-	margin: 0;
 	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5);
 }
 
-p {
-	font-family: "Raleway", sans-serif;
-	font-weight: normal;
-	font-size: 20px;
-	color: #1b203d;
+@media only screen and (max-width: 900px) {
+	.grid-container {
+		margin: 0px;
+	}
 }
+
+.grid-container > div {
+	text-align: center;
+	font-size: 30px;
+}
+
 ul {
 	font-family: "Raleway", sans-serif;
 	font-weight: 700;
 	font-size: 16px;
 	text-transform: uppercase;
+	color: #1b203d;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	list-style-type: none;
+}
+
+li {
+	border: 1px solid #000;
+	flex-grow: 1;
+	flex-shrink: 1 auto;
+	flex-basis: 100%;
+}
+
+li a {
+	display: block;
+	color: #666;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover:not(.active) {
+	background-color: #ddd;
+}
+p {
+	font-family: "Raleway", sans-serif;
+	font-weight: normal;
+	font-size: 20px;
 	color: #1b203d;
 }
 h2 {
