@@ -2,6 +2,9 @@
 	font-family: Raleway;
 	src: url("https://fonts.google.com/specimen/Raleway");
 }
+body {
+	background-color: #f4f6fc;
+}
 
 h1 {
 	font-family: "Raleway", sans-serif;
