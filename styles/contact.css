@@ -157,8 +157,10 @@ h2 {
 	background-color: #fbfcff;
 	border-radius: 12px;
 	border: solid;
+	border-width: 3px;
 	height: 200px;
 	width: 50%;
+	min-width: 200px;
 	box-shadow: 5px 8px 5px rgba(0, 0, 0, 16%);
 	font-size: 20px;
 	font-family: "Raleway", sans-serif;
@@ -196,8 +198,23 @@ fieldset {
 	padding: 0px;
 	max-height: 100%;
 	opacity: 48%;
+	display: grid;
 }
 ::placeholder {
 	font-size: 20px;
 	color: #1b203d;
+}
+.container {
+	display: grid;
+	grid-gap: 1em;
+	grid-template-areas: "contactform information";
+	grid-template-columns: auto, auto;
+	width: 100%;
+}
+.information {
+	display: grid;
+	grid-area: information;
+}
+.contactform {
+	grid-area: contactform;
 }
