@@ -1,0 +1,202 @@
+footer {
+	display: flex;
+	padding: 0 12% 0 12%;
+	background-color: #1b203d;
+}
+.productwheel {
+	display: grid;
+	grid-template-areas: "product1 product2 product3";
+	grid-template-columns: 2fr 2fr 1fr;
+	grid-gap: 0%;
+}
+.product1 {
+	grid-area: product1;
+}
+.product2 {
+	grid-area: product2;
+}
+.product3 {
+	grid-area: product3;
+}
+
+main {
+	margin: 0% 12% 12% 12%;
+	transition: margin 0.5s ease;
+}
+.trendinggrid {
+	display: grid;
+	grid-template-areas: "1 2 3 4 5 6";
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-gap: 40px;
+	width: calc(100%-80px);
+	height: auto;
+}
+.trendgridAC {
+	grid-area: 1;
+}
+.trendgridTLOU {
+	grid-area: 2;
+}
+.trendgridGhosts {
+	grid-area: 3;
+}
+.trendgridfall {
+	grid-area: 4;
+}
+.trendgridGH3 {
+	grid-area: 5;
+}
+.trendgridSM64 {
+	grid-area: 6;
+}
+div p {
+	text-transform: uppercase;
+	font-family: "RalewayBold", sans-serif;
+	margin: 0;
+}
+.pricetag p {
+	text-transform: uppercase;
+	font-family: "RalewayBold", sans-serif;
+	margin: 0;
+	font-size: 15px;
+	color: #b2b2b2;
+	letter-spacing: 0px;
+	margin-top: 5px;
+}
+.arialprice p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 700;
+	font-size: 25px;
+	color: #1b203d;
+	letter-spacing: -1px;
+	width: 100%;
+}
+div img {
+	width: 100%;
+	height: auto;
+	min-width: 100px;
+}
+@media only screen and (max-width: 1200px) {
+	.trendinggrid {
+		display: grid;
+		grid-template-areas:
+			"1 2 3"
+			"4 5 6";
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 15px 5px;
+		width: 100%;
+		height: auto;
+	}
+	.loginbox {
+		padding: 70px !important;
+		display: none;
+		margin: 0px !important;
+		width: auto !important;
+		height: 100%;
+		border-radius: 0px !important;
+		padding-left: 250px!important;
+	}
+	.loginbox h3 {
+		margin: 20px auto !important;
+	}
+}
+.overlay {
+	background-color: rgba(0, 0, 0, 0.692);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+}
+.loginbox {
+	display: flex;
+	margin: auto;
+	width: 40%;
+	background-color: #fff;
+	opacity: 1;
+	margin-top: 12vh;
+	border-radius: 25px;
+	flex-direction: column;
+	padding: 120px 120px;
+	padding-left: 250px;
+	background-image: url('/images/indeximg/gampile.jpg');
+  	background-size: 195px 100%;
+	background-repeat: no-repeat;
+}
+.box {
+	margin-top: 30px;
+	padding: 20px;
+	font-size: 20px;
+	background-color: #ffffff;
+	color: #1b203d;
+	border-radius: 7px;
+	border-width: 2px;
+	border-color: #1b203d;
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+    border-style: solid;
+    align-items: left;
+}
+.box:hover {
+	background-color: #1b203d;
+	color: #ffffff;
+	cursor: pointer;
+}
+.loginbox h2 {
+	text-transform: none;
+	margin-bottom: 6px;
+	font-size: 30px;
+	margin-top: 0px;
+}
+.loginbox p {
+	font-weight: 100;
+	text-transform: none;
+	font-family: "Raleway", sans-serif;
+	font-size: 22px;
+	padding: 0;
+}
+.loginbox a {
+	color: #4d5c8c;
+	mix-blend-mode: hard-light;
+}
+.loginbox h3 {
+	color: #1b203d;
+	margin: auto;
+	padding: 25px;
+}
+.loginbox input {
+	background-color: #a4a2a228;
+	margin-top: 0px;
+	padding: 10px;
+	border-radius: 7px;
+	width: auto;
+	font-size: 16px;
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
+.loginbox ::placeholder {
+	color: #000;
+	padding: 5px;
+	font-size: 16px;
+}
+.submit {
+	background-color: #1b203d;
+	color: #fff;
+	border-radius: 40px;
+	border-width: 2px;
+	border-color: #1b203d;
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+	border-style: solid;
+	margin-top: 30px;
+	padding: 20px;
+	font-size: 20px;
+	margin-bottom: 5px;
+	font-family: "RalewayBold", sans-serif;
+	letter-spacing: 3px;
+	cursor: pointer;
+}
+.loginbox img {
+	width: 50px;
+	height: 100%;
+	left: 0;
+	align
+}
