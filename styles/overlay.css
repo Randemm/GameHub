@@ -137,6 +137,10 @@ div img {
 	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
 	border-style: solid;
 }
+.box:hover {
+	background-color: #1b203d;
+	color: #ffffff;
+}
 .loginbox h2 {
 	text-transform: none;
 	margin-bottom: 6px;
@@ -162,12 +166,15 @@ div img {
 .loginbox input {
 	background-color: #a4a2a228;
 	margin-top: 0px;
-	padding: 5px;
+	padding: 10px;
+	border-radius: 7px;
 	width: auto;
+	font-size: 16px;
 }
 .loginbox ::placeholder {
 	color: #000;
 	padding: 5px;
+	font-size: 16px;
 }
 .submit {
 	background-color: #1b203d;

@@ -213,13 +213,23 @@ button:focus {
 	width: 100%;
 	margin-left: 8%;
 }
-
 .headusericon {
 	width: 26%;
 	height: 50px;
 	display: inline-block;
 	color: #1b203d;
 	text-align: left;
+}
+.headusericon a {
+	color: #1b203d;
+}
+.headusericon a:hover {
+	text-decoration: none;
+	color: #1b203d;
+	mix-blend-mode: hard-light;
+}
+.headusericon a:active {
+	color: #4d5c8c;
 }
 
 .headcarticon {
@@ -237,6 +247,17 @@ button:focus {
 .headusericon i {
 	font-size: 55px;
 }
+.headcarticon a {
+	color: #1b203d;
+}
+.headcarticon a:hover {
+	text-decoration: none;
+	color: #1b203d;
+	mix-blend-mode: hard-light;
+}
+.headcarticon a:active {
+	color: #4d5c8c;
+}
 
 .usericontextbox {
 	display: inline-block;
@@ -250,6 +271,17 @@ button:focus {
 	text-transform: uppercase;
 	font-family: "Raleway", sans-serif;
 	font-weight: bold;
+}
+.usericontext a {
+	color: #1b203d;
+	text-decoration: none;
+}
+.usericontext a:hover {
+	color: #1b203d;
+	text-decoration: underline;
+}
+.usericontext a:active {
+	color: #4d5c8c;
 }
 
 /* USER END */
