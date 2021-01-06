@@ -4,7 +4,6 @@ footer {
 	background-color: #1b203d;
 }
 
-
 main {
 	margin: 0% 12% 12% 12%;
 	transition: margin 0.5s ease;
@@ -21,72 +20,71 @@ main {
 	grid-area: 1;
 }
 .gamecover {
-    border-radius: 12px;
-    margin-top: 33.5px;
-    width: 100%;
-    height: auto;
-    min-width: 200px;
+	border-radius: 12px;
+	margin-top: 33.5px;
+	width: 100%;
+	height: auto;
+	min-width: 200px;
 }
 .youtubeembed {
-    display: inline;
+	display: inline;
 }
 .description p {
-    font-family: "RalewayLightBold",sans-serif;
-    letter-spacing: 1px;
-    padding-top: 10px;
+	font-family: "RalewayLightBold", sans-serif;
+	letter-spacing: 1px;
+	padding-top: 10px;
 }
 .addcartkey {
-    border-radius: 12px;
-    width: 50%;
-    height: 65px;
-    margin-RIGHT: 20%;
-    font-family: "RalewayBold",sans-serif;
-    display: grid;
-    grid-template-columns: 4fr 1.4fr;
-    grid-template-areas: text icon;
-    color: #1b203d;
-    background-color: #f4f6fc;
-    border-style: solid;
-    border-color: #1b203d;
-    border-width: 2px;
-    min-width: 158px;
-    float:right;
+	border-radius: 12px;
+	height: 65px;
+	margin: 15px;
+	font-family: "RalewayBold", sans-serif;
+	display: grid;
+	grid-template-columns: 4fr 1.4fr;
+	grid-template-areas: "3 4";
+	color: #1b203d;
+	background-color: #f4f6fc;
+	border-style: solid;
+	border-color: #1b203d;
+	border-width: 2px;
+	min-width: 158px;
+	float: right;
 }
 .cartkeytext {
-    grid-area: text;
+	grid-area: text;
 }
 .cartkeyicon {
-    grid-area: icon;
+	grid-area: icon;
 }
 .addcartkey p {
-    font-family: Arial, Helvetica, sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
 	font-weight: 700;
 	font-size: 30px;
 	color: #1b203d;
 	letter-spacing: -1px;
-    width: 100%;
-    margin: auto;
-    text-align: left;
-    padding-top: 5px;
-    padding-left: 20px;
+	width: 100%;
+	margin: auto;
+	text-align: left;
+	padding-top: 5px;
+	padding-left: 20px;
 }
 .addcartkey span {
 	font-weight: 700;
-    font-size: 16px;
-    padding-left: 20px;
+	font-size: 16px;
+	padding-left: 20px;
 	color: #1b203d;
 	letter-spacing: -1px;
-    width: 100%;
-    margin: auto;
-    text-align: left;
-    display: block;
+	width: 100%;
+	margin: auto;
+	text-align: left;
+	display: block;
 }
 .addcartkey i {
-    padding-top: 15px;
-    font-size: 35px;
+	padding-top: 15px;
+	font-size: 35px;
 }
 .description span {
-    
+
 }
 }
 div p {
@@ -111,38 +109,58 @@ div p {
 	letter-spacing: -1px;
 	width: 100%;
 }
+a {
+	text-decoration: none;
+}
+a i {
+	text-decoration: none;
+}
 div img {
 	width: 100%;
 	height: auto;
 	min-width: 100px;
 }
 @media only screen and (max-width: 1025px) {
-.gamecover {
-    display:none;
-} 
-.productwrap {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+	.gamecover {
+		display: none;
+	}
+	.productwrap {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+	iframe {
+		width: 80%;
+		height: auto;
+		margin-left: 10%;
+		margin-top: 20px;
+		min-height: 300px;
+	}
+	.youtubeembed {
+		margin: auto;
+	}
+	main {
+		margin-left: 20%;
+	}
+	.addcartkey {
+		max-width: 20%;
+		float: right;
+		margin: auto;
+	}
+	footer {
+		display: none !important;
+	}
 }
-iframe {
-    width: 80%;
-    height: auto;
-    margin-left: 10%;
-    min-height: 300px;
+
+.area2 {
+	grid-area: 3;
 }
-.youtubeembed {
-    margin: auto;
+.area1 {
+	grid-area: 4;
 }
-main {
-   margin-left: 20%;
-}
-.addcartkey {
-    max-width: 20%;
-    float: right;
-    margin: auto;
-}
-footer {
-    display: none!important;
-}
+a :hover {
+	cursor: pointer;
+	background-color: #1b203d;
+	color: #f4f6fc;
+	border-radius: 10px;
 }
