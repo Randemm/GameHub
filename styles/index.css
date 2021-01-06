@@ -71,6 +71,10 @@ div p {
 	letter-spacing: -1px;
 	width: 100%;
 }
+.arialprice p:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
 div img {
 	width: 100%;
 	height: auto;
