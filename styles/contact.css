@@ -16,7 +16,7 @@ button {
 	display: none;
 }
 p {
-	margin-bottom: 2%;
+	margin-bottom: 15px !important;
 }
 .contactinfo {
 	background-color: #fbfcff;

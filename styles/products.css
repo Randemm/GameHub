@@ -76,15 +76,6 @@ footer {
 	padding-top: 15px;
 	font-size: 35px;
 }
-.description span {
-
-}
-}
-div p {
-	text-transform: uppercase;
-	font-family: "RalewayBold", sans-serif;
-	margin: 0;
-}
 .pricetag p {
 	text-transform: uppercase;
 	font-family: "RalewayBold", sans-serif;
@@ -92,16 +83,6 @@ div p {
 	font-size: 15px;
 	color: #b2b2b2;
 	letter-spacing: 0px;
-	margin-top: 5px;
-}
-h4 {
-	font-family: Arial, Helvetica, sans-serif;
-	font-weight: 700;
-	font-size: 25px;
-	letter-spacing: -1px;
-	width: 100%;
-	margin: 0;
-	padding-left: 20px;
 	margin-top: 5px;
 }
 a {
@@ -150,4 +131,44 @@ div img {
 	background-color: #1b203d;
 	color: #f4f6fc;
 	border-radius: 12px;
+}
+.othergames {
+	display: grid;
+	grid-template-areas: "1 2 3 4 5 6 7";
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-gap: 20px;
+	width: calc(100%-80px);
+	height: auto;
+}
+.phototag p {
+	font-family: "RalewayBold", sans-serif;
+	text-transform: uppercase;
+	font-weight: 900;
+	text-align: center;
+	font-size: 100%;
+}
+.phototag p:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+.othergamesMW2 {
+	grid-area: 1;
+}
+.othergamesOW {
+	grid-area: 2;
+}
+.othergamesFIFA {
+	grid-area: 3;
+}
+.othergamesGTA {
+	grid-area: 4;
+}
+.othergamesSKYRIM {
+	grid-area: 5;
+}
+.trendgridTLOU {
+	grid-area: 6;
+}
+.trendgridGHOSTS {
+	grid-area: 7;
 }

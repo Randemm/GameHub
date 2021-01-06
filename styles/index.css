@@ -49,7 +49,7 @@ main {
 .trendgridSM64 {
 	grid-area: 6;
 }
-div p {
+.phototag p {
 	text-transform: uppercase;
 	font-family: "RalewayBold", sans-serif;
 	margin: 0;
