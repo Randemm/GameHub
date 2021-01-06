@@ -1,0 +1,148 @@
+footer {
+	display: flex;
+	padding: 0 12% 0 12%;
+	background-color: #1b203d;
+}
+
+
+main {
+	margin: 0% 12% 12% 12%;
+	transition: margin 0.5s ease;
+}
+.productwrap {
+	display: grid;
+	grid-template-areas: "1 2";
+	grid-template-columns: 2.5fr 1fr;
+	grid-gap: 20px;
+	width: calc(100%-80px);
+	height: auto;
+}
+.description {
+	grid-area: 1;
+}
+.gamecover {
+    border-radius: 12px;
+    margin-top: 33.5px;
+    width: 100%;
+    height: auto;
+    min-width: 200px;
+}
+.youtubeembed {
+    display: inline;
+}
+.description p {
+    font-family: "RalewayLightBold",sans-serif;
+    letter-spacing: 1px;
+    padding-top: 10px;
+}
+.addcartkey {
+    border-radius: 12px;
+    width: 50%;
+    height: 65px;
+    margin-RIGHT: 20%;
+    font-family: "RalewayBold",sans-serif;
+    display: grid;
+    grid-template-columns: 4fr 1.4fr;
+    grid-template-areas: text icon;
+    color: #1b203d;
+    background-color: #f4f6fc;
+    border-style: solid;
+    border-color: #1b203d;
+    border-width: 2px;
+    min-width: 158px;
+    float:right;
+}
+.cartkeytext {
+    grid-area: text;
+}
+.cartkeyicon {
+    grid-area: icon;
+}
+.addcartkey p {
+    font-family: Arial, Helvetica, sans-serif;
+	font-weight: 700;
+	font-size: 30px;
+	color: #1b203d;
+	letter-spacing: -1px;
+    width: 100%;
+    margin: auto;
+    text-align: left;
+    padding-top: 5px;
+    padding-left: 20px;
+}
+.addcartkey span {
+	font-weight: 700;
+    font-size: 16px;
+    padding-left: 20px;
+	color: #1b203d;
+	letter-spacing: -1px;
+    width: 100%;
+    margin: auto;
+    text-align: left;
+    display: block;
+}
+.addcartkey i {
+    padding-top: 15px;
+    font-size: 35px;
+}
+.description span {
+    
+}
+}
+div p {
+	text-transform: uppercase;
+	font-family: "RalewayBold", sans-serif;
+	margin: 0;
+}
+.pricetag p {
+	text-transform: uppercase;
+	font-family: "RalewayBold", sans-serif;
+	margin: 0;
+	font-size: 15px;
+	color: #b2b2b2;
+	letter-spacing: 0px;
+	margin-top: 5px;
+}
+.arialprice p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 700;
+	font-size: 25px;
+	color: #1b203d;
+	letter-spacing: -1px;
+	width: 100%;
+}
+div img {
+	width: 100%;
+	height: auto;
+	min-width: 100px;
+}
+@media only screen and (max-width: 1025px) {
+.gamecover {
+    display:none;
+} 
+.productwrap {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+iframe {
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+    min-height: 300px;
+}
+.youtubeembed {
+    margin: auto;
+}
+main {
+   margin-left: 20%;
+}
+.addcartkey {
+    max-width: 20%;
+    float: right;
+    margin: auto;
+}
+footer {
+    display: none!important;
+}
+}
