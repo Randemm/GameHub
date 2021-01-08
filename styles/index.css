@@ -152,6 +152,24 @@ button:hover {
 	#bullets {
 		display: none;
 	}
+	#slides .slide_1 {
+		background-image: url("/images/indeximg/codmwbannercomp.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+	#slides .slide_2 {
+		background-image: url("/images/indeximg/fifabannercomp.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+	#slides .slide_3 {
+		background-image: url("/images/indeximg/cyberbannercomp.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
 }
 /* IMAGE CAROUSEL END */
 .trendinggrid {
@@ -260,10 +278,12 @@ button:hover {
 	margin-bottom: 15px;
 	position: relative;
 }
+
 .wrap1 p {
 	font-family: "RalewayBold", sans-serif;
 	margin: 13px 0px 15px 0px;
 }
+
 .wrap1 span {
 	text-transform: uppercase;
 	font-family: "RalewayBold", sans-serif;
@@ -271,12 +291,48 @@ button:hover {
 	font-size: 17px;
 	color: #b2b2b2;
 }
+
 .smallpics {
 	float: left;
 	margin-right: 15px;
+	position: relative;
 }
+
 .textwrap {
 	position: absolute;
 	bottom: 10px;
 	left: 145px;
+}
+.prelabel {
+	background-color: #ffab40;
+	position: absolute;
+	font-family: "RalewayBold", sans-serif;
+	font-size: 12px;
+	font-style: italic;
+	color: #1b203d;
+	padding: 10px 5px;
+	bottom: 15px;
+	right: 0px;
+}
+.textwrap p {
+	margin: 0;
+}
+.discount {
+	display: flex;
+	flex-direction: row;
+}
+.oldprice {
+	color: gray;
+	text-decoration: line-through;
+	font-family: Arial, Helvetica, sans-serif !important;
+	font-size: 17px;
+}
+.percenttag {
+	background-color: #ffab40;
+	display: inline;
+	padding: 2px 3px;
+	border-radius: 8px;
+	font-family: "Raleway", sans-serif;
+	font-weight: 600;
+	margin-left: 10px;
 }
