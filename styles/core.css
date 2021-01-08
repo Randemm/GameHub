@@ -71,7 +71,9 @@ p {
 	color: #1b203d;
 	margin: 10px 0px 50px 0px;
 }
-
+a {
+	text-decoration: none;
+}
 /* HEADER */
 
 header {

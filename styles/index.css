@@ -179,7 +179,7 @@ button:hover {
 	grid-gap: 40px;
 	width: calc(100%-80px);
 	height: auto;
-	margin-bottom: 90px;
+	margin-bottom: 70px;
 }
 .trendgridAC {
 	grid-area: 1;
@@ -250,6 +250,9 @@ button:hover {
 	grid-gap: 40px;
 	height: auto;
 }
+.nowrap {
+	white-space: nowrap;
+}
 .gamegrid h1 {
 	text-transform: none;
 }
@@ -314,6 +317,9 @@ button:hover {
 	bottom: 15px;
 	right: 0px;
 }
+.divider {
+	height: 23px;
+}
 .textwrap p {
 	margin: 0;
 }
@@ -335,4 +341,24 @@ button:hover {
 	font-family: "Raleway", sans-serif;
 	font-weight: 600;
 	margin-left: 10px;
+}
+.nowrap {
+	white-space: nowrap;
+}
+@media only screen and (max-width: 1400px) {
+	.gamegrid {
+		display: grid;
+		grid-template-areas:
+			"1"
+			"2"
+			"3";
+		grid-template-columns: 1fr;
+		width: 100%;
+		grid-gap: 40px;
+		height: auto;
+		margin: auto;
+	}
+	.nowrap {
+		white-space: normal;
+	}
 }
