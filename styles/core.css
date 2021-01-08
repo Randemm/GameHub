@@ -328,7 +328,9 @@ button:focus {
 			"navbar navbar navbar";
 		grid-template-columns: 1fr auto 1.5fr;
 	}
-
+	h1 {
+		white-space: wrap;
+	}
 	.search input {
 		margin-top: 0;
 	}
