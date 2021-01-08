@@ -172,3 +172,17 @@ div img {
 .trendgridGHOSTS {
 	grid-area: 7;
 }
+
+/* ULTRAWIDE YOUTUBE BOX */
+@media only screen and (min-width: 2000px) {
+	.youtubeembed iframe {
+		height: 66%;
+		width: 76%;
+		margin: 0px auto;
+	}
+	.youtubeembed {
+		height: 100%;
+		display: flex;
+	}
+}
+/* ULTRAWIDE YOUTUBE BOX */
