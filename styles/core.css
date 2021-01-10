@@ -344,9 +344,6 @@ button:focus {
 	.navbar {
 		display: none;
 	}
-	footer {
-		display: none !important;
-	}
 }
 
 /* MEDIA QUERIES: NAVBAR END */
@@ -358,7 +355,7 @@ footer {
 	background-color: #1b203d;
 	display: grid;
 	grid-template-areas:
-		"About info location"
+		"About location follow"
 		"copyright copyright copyright";
 	grid-template-columns: 1fr 2fr 1fr;
 	grid-gap: 0px 3%;
@@ -368,10 +365,10 @@ footer {
 	grid-area: About;
 }
 .footerpart2 {
-	grid-area: info;
+	grid-area: location;
 }
 .footerpart3 {
-	grid-area: location;
+	grid-area: follow;
 }
 .footercopy {
 	grid-area: copyright;
@@ -390,9 +387,14 @@ footer {
 	color: #fbfcff;
 	padding: 1% 0% 1% 0%;
 	cursor: pointer;
+	-webkit-transition: font-size 0.3s ease;
+	-moz-transition: font-size 0.3s ease;
+	-o-transition: font-size 0.3s ease;
+	transition: font-size 0.3s ease;
 }
 .followlist:hover {
 	text-decoration: underline;
+	font-size: 18px;
 }
 .cp-text {
 	color: #fbfcff;

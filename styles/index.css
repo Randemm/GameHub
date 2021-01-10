@@ -12,6 +12,10 @@ button {
 	opacity: 0.9;
 	color: #1b203d;
 	background-color: #ffffff;
+	-webkit-transition: font-size 0.3s ease;
+	-moz-transition: font-size 0.3s ease;
+	-o-transition: font-size 0.3s ease;
+	transition: font-size 0.3s ease;
 }
 button:hover {
 	cursor: pointer;
@@ -19,6 +23,7 @@ button:hover {
 	font-size: 17px;
 	font-weight: bold;
 	border-width: 3px;
+	font-size: 18px;
 }
 #slider {
 	margin: 0 auto;
