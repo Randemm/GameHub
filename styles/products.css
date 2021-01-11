@@ -14,6 +14,9 @@ footer {
 .description {
 	grid-area: 1;
 }
+.description p {
+	margin-bottom: 15px;
+}
 .gamecover {
 	border-radius: 12px;
 	margin-top: 33.5px;

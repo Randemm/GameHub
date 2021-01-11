@@ -1,0 +1,91 @@
+.linebreak {
+	border-top: #b1b1b1;
+	border-width: 2px 0px 0px 0px;
+	border-style: solid;
+	margin: 60px 0px;
+	opacity: 0.7;
+}
+.profilegrid {
+	display: grid;
+	grid-template-areas: "1 2 3";
+	grid-template-columns: 1fr 1.5fr 1fr;
+	width: 100%;
+	grid-gap: 40px;
+	height: auto;
+}
+.col1 {
+	grid-area: 1;
+	display: flex;
+	flex-direction: column;
+	height: auto;
+}
+.col2 {
+	display: flex;
+	flex-direction: column;
+	height: auto;
+	text-align: center;
+	white-space: nowrap;
+}
+.col3 {
+	display: flex;
+	flex-direction: column;
+	height: auto;
+}
+.profile {
+	padding: 10px;
+	border-style: solid;
+	border-color: #1b203d;
+	border-radius: 8px;
+	margin-top: 15px;
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
+.profile img {
+	float: left;
+	border-radius: 90px;
+	border-width: 3px;
+	border-style: solid;
+	margin-right: 5px;
+}
+.cart {
+	border-style: solid;
+	border-color: #1b203d;
+	border-radius: 8px;
+	margin-top: 15px;
+	padding: 10px;
+	text-align: center;
+	white-space: nowrap;
+	padding: 15px 30px;
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
+.cartproduct {
+	border-style: solid;
+	border-color: #1b203d;
+	border-radius: 8px;
+	border-width: 2px;
+	text-align: left;
+	padding: 0px 5px;
+	display: flex;
+	flex-direction: row;
+}
+.col2 i {
+	font-size: 145px;
+	color: #1b203d;
+	margin: auto;
+}
+.cart i {
+	font-size: 80px;
+	color: #1b203d;
+}
+.box {
+	font-family: "RalewayLightBold", sans-serif;
+	font-size: 20px;
+	background-color: #1b203d;
+	color: #ffffff;
+	border-radius: 7px;
+	border-width: 2px;
+	border-color: #1b203d;
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+	border-style: solid;
+	padding: 7px 40px;
+	margin-top: 50px;
+}
