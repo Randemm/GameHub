@@ -96,6 +96,16 @@
 		background-image: none !important;
 		padding: 30px !important;
 	}
+	.loginbox h3 {
+		padding: 0 !important;
+		margin: 4px auto !important;
+	}
+	.box {
+		margin-top: 10px !important;
+	}
+	.submit {
+		margin-top: 10px !important;
+	}
 }
 @media only screen and (max-height: 840px) {
 	.loginbox {
@@ -107,9 +117,6 @@
 		border-radius: 0px !important;
 		padding: 30px !important;
 		background-image: none !important;
-	}
-	.loginbox h3 {
-		margin: 20px auto !important;
 	}
 }
 .overlay {
@@ -148,6 +155,7 @@
 	border-color: #1b203d;
 	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
 	border-style: solid;
+	width: 100%;
 }
 .box:hover {
 	background-color: #1b203d;
@@ -167,7 +175,7 @@
 	font-size: 22px;
 	padding: 0;
 }
-.loginbox a {
+a.overlaylink {
 	color: #4d5c8c;
 	mix-blend-mode: hard-light;
 }
@@ -175,6 +183,7 @@
 	color: #1b203d;
 	margin: auto;
 	padding: 25px;
+	text-align: center;
 }
 .loginbox input {
 	background-color: #a4a2a228;
