@@ -81,11 +81,12 @@ p.pricetag {
 .col2 i {
 	font-size: 145px;
 	color: #1b203d;
-	margin: auto;
+	margin-top: 15px;
 }
 .cart i {
 	font-size: 80px;
 	color: #1b203d;
+	margin: 15px 0px;
 }
 .checkout {
 	font-family: "RalewayLightBold", sans-serif;
@@ -99,7 +100,6 @@ p.pricetag {
 	border-style: solid;
 	padding: 7px 40px;
 	margin-top: 50px;
-	cursor: pointer;
 }
 /* CART-END */
 /* RECENT HISTORY */

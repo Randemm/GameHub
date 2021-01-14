@@ -144,38 +144,60 @@ button:hover {
 #slide3:checked ~ #bullets label:nth-child(3) {
 	background: #444;
 }
-@media screen and (max-width: 900px) {
-	#slides {
-		display: none;
-	}
-	#slider label {
-		display: none;
-	}
-	#controls {
-		display: none;
-	}
-	#bullets {
-		display: none;
-	}
+@media screen and (max-width: 750px) {
 	#slides .slide_1 {
-		background-image: url("/images/indeximg/codmwbannercomp.jpg");
+		background-image: url("/images/indeximg/codmwbannermedia.jpg");
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center;
+		height: 250px;
 	}
 	#slides .slide_2 {
-		background-image: url("/images/indeximg/fifabannercomp.jpg");
+		background-image: url("/images/indeximg/fifamediacomp.jpg");
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center;
+		height: 250px;
 	}
 	#slides .slide_3 {
-		background-image: url("/images/indeximg/cyberbannercomp.jpg");
+		background-image: url("/images/indeximg/cyberpunkmediacomp.jpg");
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center;
+		height: 250px;
+	}
+	button {
+		padding: 10px 15px;
+		border-radius: 28px;
+		border-style: solid;
+		border-color: #1b203d;
+		border-width: 2px;
+		font-family: "RalewayLightBold", sans-serif;
+		font-size: 15px;
+	}
+	div#bullets {
+		margin-top: 25px;
+	}
+	#slide1:checked ~ #controls label:nth-child(2),
+	#slide2:checked ~ #controls label:nth-child(3),
+	#slide3:checked ~ #controls label:nth-child(1) {
+		background: url(https://image.flaticon.com/icons/svg/130/130884.svg)
+			no-repeat;
+		float: right;
+		margin: -100px -50px 0 0;
+		display: block;
+	}
+	#slide1:checked ~ #controls label:nth-last-child(1),
+	#slide2:checked ~ #controls label:nth-last-child(3),
+	#slide3:checked ~ #controls label:nth-last-child(2) {
+		background: url(https://image.flaticon.com/icons/svg/130/130882.svg)
+			no-repeat;
+		float: left;
+		margin: -100px 0 0 -50px;
+		display: block;
 	}
 }
+
 /* IMAGE CAROUSEL END */
 .trendinggrid {
 	display: grid;
@@ -249,6 +271,19 @@ button:hover {
 			"1 2 3"
 			"4 5 6";
 		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 15px 5px;
+		width: 100%;
+		height: auto;
+	}
+}
+@media only screen and (max-width: 500px) {
+	.trendinggrid {
+		display: grid;
+		grid-template-areas:
+			"1 2"
+			"3 4"
+			"5 6";
+		grid-template-columns: 1fr 1fr;
 		grid-gap: 15px 5px;
 		width: 100%;
 		height: auto;
