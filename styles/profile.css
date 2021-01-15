@@ -110,7 +110,7 @@ p.pricetag {
 	display: flex;
 	flex-direction: row;
 	position: relative;
-	min-width: 277px;
+	min-width: 240px;
 }
 .col2 i {
 	font-size: 145px;
@@ -182,4 +182,23 @@ p.sold {
 	position: absolute;
 	left: 100px;
 	bottom: 0;
+}
+@media only screen and (max-width: 1025px) {
+	.profilegrid {
+		display: grid;
+		grid-template-areas: "1";
+		grid-template-columns: 1fr;
+		width: 100%;
+		grid-gap: 40px;
+		height: auto;
+	}
+	.col2 {
+		grid-area: 3;
+	}
+	.col2 h1 {
+		white-space: normal;
+	}
+	main {
+		margin: 0% 0% 0% 0% !important;
+	}
 }
