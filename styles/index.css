@@ -17,6 +17,7 @@ button {
 	-moz-transition: font-size 0.3s ease;
 	-o-transition: font-size 0.3s ease;
 	transition: font-size 0.3s ease;
+	z-index: 0;
 }
 button:hover {
 	cursor: pointer;
