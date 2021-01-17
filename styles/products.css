@@ -121,6 +121,12 @@ div img {
 	main {
 		margin-left: 20%;
 	}
+	.othergames {
+		display: none !important;
+	}
+	h2 {
+		display: none !important;
+	}
 }
 
 .area2 {

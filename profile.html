@@ -13,7 +13,35 @@
 	</head>
 	<body>
 		<!-- HEADER START -->
+		<!-- HEADER START -->
 		<header>
+			<!-- Hamburger -->
+			<div class="hamburgermenu" id="hamburger-menu">
+				<ul>
+				<a href="index.html"><li>Home</li></a>
+				<a href="product.html"><li>Store</li></a>
+				<a href="profile.html"><li>Profile</li></a>
+				<a href="contact.html"><li>Contact us</li></a>
+				<li style="background-color: #FFAB40;"><a href="#" style="color: #1b203d">GameHub+</a></li>
+				</ul>
+			  </div>
+			  <div class="hamburger" id="hamburger-menu2">
+				<a onclick='check()'>
+				  <i class="material-icons">
+					menu
+				  </i>
+				</a>
+				<script type='text/javascript'>
+		
+				  function check()
+				  {
+					  document.getElementById("hamburger-menu").classList.toggle('expanded');
+					  document.getElementById("hamburger-menu2").classList.toggle('expanded');
+				  }
+				  
+				  </script>
+			  </div>
+			  <!-- HAMBURGER END -->
 			<div class="logo">
 				<a href="index.html">
 					<img
@@ -27,10 +55,10 @@
 					class="searchbar"
 					placeholder="Search for products"
 					type="text"
-				/>
+				>
+				<i style="cursor: pointer; color:#1b203d; font-size:40px; position: absolute;bottom: 5px; right: 5px;" class="material-icons"> search </i>
 			</div>
 			<div class="user">
-				<div class="user-container" style="border-radius: 15px">
 					<div class="headusericon">
 						<a href="/overlay.html"
 							><i class="material-icons"> account_circle </i></a
@@ -42,20 +70,19 @@
 						>
 					</div>
 					<div class="headcarticon">
-						<a href="overlaysale.html"
-							><i class="material-icons"> shopping_cart</i></a
-						>
+						<a href="overlaysale.html">
+							<i class="material-icons"> shopping_cart</i>
+						</a>
 					</div>
-				</div>
 			</div>
 			<div class="navbar">
 				<ul>
 					<li><a href="index.html">Home</a></li>
-					<li><a href="product.html">pre-orders</a></li>
-					<li><a href="product.html">Nearly-new</a></li>
-					<li><a href="contact.html">Contact us</a></li>
+					<li><a href="product.html">Store</a></li>
+					<li><a href="profile.html">sell games</a></li>
+					<li><a href="contact.html">contact us</a></li>
 					<li style="background-color: #ffab40">
-						<a href="#" style="color: #1b203d">GameHub+ </a>
+					<a href="#" style="color: #1b203d">GameHub+ </a>
 					</li>
 				</ul>
 			</div>
@@ -108,7 +135,7 @@
 							<p class="pricetag">$69.99</p>
 						</div>
 						<a href="complete.html">
-						<button class="checkout">Checkout?</button>
+						<button class="checkout">Checkout</button>
 					</a>
 					</div>
 					<h2>Recent History</h2>
