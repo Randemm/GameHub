@@ -18,6 +18,12 @@ button {
   width: 30%;
   margin: 15px auto;
 }
+span {
+  color: red;
+  padding: 5px;
+  font-size: 16px;
+  font-family: "Raeway", sans-serif;
+}
 button:hover {
   cursor: pointer;
 }
