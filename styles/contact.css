@@ -17,6 +17,14 @@ button {
   font-family: "Raleway", sans-serif;
   width: 30%;
   margin: 15px auto;
+  -webkit-transition: font-size 0.3s ease;
+  -moz-transition: font-size 0.3s ease;
+  -o-transition: font-size 0.3s ease;
+  transition: font-size 0.3s ease;
+}
+button:hover {
+  cursor: pointer;
+  font-size: 18px;
 }
 span {
   color: red;
@@ -24,9 +32,7 @@ span {
   font-size: 16px;
   font-family: "Raeway", sans-serif;
 }
-button:hover {
-  cursor: pointer;
-}
+
 p {
   margin-bottom: 15px !important;
 }
@@ -56,10 +62,15 @@ p {
   font-family: "Raleway", sans-serif;
   width: 50%;
   margin: 15px auto;
-  font-size: 20px;
+  font-size: 18px;
+  -webkit-transition: font-size 0.3s ease;
+  -moz-transition: font-size 0.3s ease;
+  -o-transition: font-size 0.3s ease;
+  transition: font-size 0.3s ease;
 }
 .submit:hover {
   cursor: pointer;
+  font-size: 22px;
 }
 
 .userquestion {
