@@ -97,27 +97,27 @@
 		</header>
 		<!-- HEADER END -->
     <main>
-        <div class="contactform">
+        <div id="form" class="contactform">
             <h1>Have some questions?</h1>
             <p>We are here to answer you on the phone, in the chat or via Email.</p>
-            <form>
-              <fieldset> 
-                <input class="contactinfo" type="text" name="firstname" placeholder="First name" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"></input>
-                <input class="contactinfo" type="text" name="lastname" placeholder="Last name" pattern=[0-9]{3}-[0-9]{2}-[0-9]{3}></input>
-                <input class="contactinfo" type="text" name="email" placeholder="What's your email?" pattern=[0-9]{3}-[0-9]{2}-[0-9]{3}></input>
-            <textarea class="userquestion" type="text" name="questions?" placeholder="Your questions.." pattern=[0-9]{3}-[0-9]{2}-[0-9]{3}></textarea>
-
-          </fieldset>
-           <button>SEND</button>
+            <form name="contactForm" onsubmit="return validateForm()">
+              <label for="fname">First name:</label>
+                <input class="contactinfo" type="text" id="fname" name="first name" placeholder="First name">
+                <label for="lname">Last name:</label>
+                <input class="contactinfo" type="text" id="lname" name="last name" placeholder="Last name">
+                <label for="email">Email:</label>
+                <input class="contactinfo" type="text" id="email" name="email" placeholder="What's your email?">
+                <label for="text">Subject:</label>
+            <textarea class="userquestion" type="text" name="subject" placeholder="Your questions.."></textarea>
+            <input class="submit" id="submit" type="submit" value="Submit">
         </form>
         </div>
         <div class="map">
           <h1>office location</h1>
           <p>Open Mon-Fri 08:00 - 15:30</p>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.5894413443975!2d10.76561588367972!3d59.92917384806806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e6a11bf7ad9%3A0x49c39aa2e4621b85!2sD%C3%A6lenenggata%2040A%2C%200567%20Oslo!5e0!3m2!1sno!2sno!4v1609765479601!5m2!1sno!2sno" width="100%" height="425" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.5894413443975!2d10.76561588367972!3d59.92917384806806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e6a11bf7ad9%3A0x49c39aa2e4621b85!2sD%C3%A6lenenggata%2040A%2C%200567%20Oslo!5e0!3m2!1sno!2sno!4v1609765479601!5m2!1sno!2sno" width="100%" height="550" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
         </main>
-
         <footer>
           <div class="footerpart1">
             <h3>about</h3>
@@ -161,5 +161,6 @@
             <p class="cp-text">© Copyright 2020 GameHub. All rights reserved.</p>
           </div>
         </footer>
+        <script src="js/contact.js"></script>
   </body>
 </html>
