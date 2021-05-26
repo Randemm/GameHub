@@ -79,19 +79,19 @@ button:hover {
   color: #fff;
 }
 #slides .slide_1 {
-  background-image: url("/images/indeximg/codmwbannercomp.jpg");
+  background-image: url("images/indeximg/codmwbannercomp.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 #slides .slide_2 {
-  background-image: url("/images/indeximg/fifabannercomp.jpg");
+  background-image: url("images/indeximg/fifabannercomp.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 #slides .slide_3 {
-  background-image: url("/images/indeximg/cyberbannercomp.jpg");
+  background-image: url("images/indeximg/cyberbannercomp.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

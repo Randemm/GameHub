@@ -494,6 +494,7 @@ footer {
   grid-gap: 0px 3%;
   padding: 2% 12% 0% 12%;
   text-align: center !important;
+  margin-top: 30px;
 }
 .footerpart1 {
   grid-area: About;
