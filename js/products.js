@@ -27,17 +27,18 @@ var preorderProducts = productArray.filter(
 preorderProducts.forEach(function (product) {
   preorderWrap.innerHTML += `
   <div class="productwrap">
-  <button class="addcart-button2">Add to cart</button>
+    <button class="addcart-button2">Add to cart</button>
     <div class="phototag">
       <div class="prelabel">PRE-ORDER</div>
       <img src="${product.image}" alt="${product.name}">
     </div>
-  <p class="prodname">${product.name}</p>
+    <p class="prodname">${product.name}</p>
     <div class="textwrap">
       <span>from</span>
-        <div class="arialprice">
-          <p>$${product.price}</p>
-          <div class="divider"></div>
+      <div class="arialprice">
+        <p>$${product.price}</p>
+      <div class="divider"></div>
+      </div>
     </div>
   </div>
   `;
