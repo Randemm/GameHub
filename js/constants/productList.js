@@ -91,7 +91,7 @@ export const productArray = [
   },
   {
     name: "Call of Duty Black Ops III",
-    image: (src = "images/indeximg/CodBO3small.jpg"),
+    image: "images/indeximg/CodBO3small.jpg",
     category: "Action-adventure",
     id: "12",
     price: 26.21,
