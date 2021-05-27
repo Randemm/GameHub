@@ -3,6 +3,7 @@ import { productArray } from "./constants/productList.js";
 const productsContainer = document.querySelector(".products");
 const cart = document.querySelector(".cart");
 const cartList = document.querySelector(".cart-list");
+const totalContainer = document.querySelector(".total");
 
 let cartArray = [];
 
@@ -96,7 +97,6 @@ bestProducts.forEach(function (product) {
 const buttons = document.querySelectorAll("button");
 buttons.forEach(function (button) {
   button.onclick = function (event) {
-    cartArray.push(event.target.dataset.product);
     const itemToAdd = productArray.find(
       (item) => item.id === event.target.dataset.product
     );
@@ -108,11 +108,17 @@ buttons.forEach(function (button) {
 function showCart(cartItems) {
   cart.style.display = "block";
   cartList.innerHTML = "";
+  let total = 0;
   cartItems.forEach(function (cartElement) {
+    total += cartElement.price;
     console.log(cartElement);
     cartList.innerHTML += `<div class="cart-item">
           <h4>${cartElement.name}</h4>
+          <img src ="${cartElement.image}" alt="${cartElement.name}" class="cart-image">
+          <p class="cartprice">$${cartElement.price}</p>
+          <button class="revert-button">X</button>
         </div>
     `;
   });
+  totalContainer.innerHTML = `Total: $${total}`;
 }

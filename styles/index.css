@@ -1,4 +1,7 @@
 /* IMAGE CAROUSEL START */
+button:hover {
+  cursor: pointer;
+}
 
 .slidebutton {
   padding: 20px 30px;
@@ -229,9 +232,11 @@
 }
 
 .cart {
-  border: 1px solid #1b203d;
+  border: 2px solid #1b203d;
+  border-radius: 6px;
   max-width: 600px;
   min-width: 200px;
+  max-height: 650px;
   padding: 20px;
   margin: auto;
   position: fixed;
@@ -240,9 +245,33 @@
   background-color: #fbfcff;
   font-family: "Raleway", sans-serif;
   display: none;
+  z-index: 3;
+  overflow-y: scroll;
+}
+.cartprice {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  float: right;
+  color: black;
+  margin: 55px 0px 0px 0px;
 }
 
+.total {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px 0px;
+}
+.cart h4 {
+  margin: 5px 0px;
+  font-weight: bolder;
+}
 .cart-item {
+  border-bottom: 1px solid black;
+  position: relative;
+}
+.cart-image {
+  width: 50px;
+  border-radius: 10px;
 }
 
 .addcart-button {
@@ -289,6 +318,14 @@
   background-color: #1b203d;
   border: none;
   font-size: 16px;
+}
+.revert-button {
+  position: absolute;
+  background-color: #8b0000;
+  color: #fbfcff;
+  border: none;
+  border-radius: 4px;
+  right: 1px;
 }
 .product img {
   width: 100%;
