@@ -1,6 +1,6 @@
 /* IMAGE CAROUSEL START */
 
-.slidebutton {
+button {
   padding: 20px 30px;
   border-radius: 28px;
   border-style: solid;
@@ -19,7 +19,7 @@
   transition: font-size 0.3s ease;
   z-index: 0;
 }
-.slidebutton:hover {
+button:hover {
   cursor: pointer;
   opacity: 1;
   font-size: 17px;
@@ -79,19 +79,19 @@
   color: #fff;
 }
 #slides .slide_1 {
-  background-image: url("/Gamehub/images/indeximg/codmwbannercomp.jpg");
+  background-image: url("images/indeximg/codmwbannercomp.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 #slides .slide_2 {
-  background-image: url("/Gamehub/images/indeximg/fifabannercomp.jpg");
+  background-image: url("images/indeximg/fifabannercomp.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 #slides .slide_3 {
-  background-image: url("/Gamehub/images/indeximg/cyberbannercomp.jpg");
+  background-image: url("images/indeximg/cyberbannercomp.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -148,28 +148,34 @@
 }
 @media screen and (max-width: 750px) {
   #slides .slide_1 {
-    background-image: url("/Gamehub/images/indeximg/codmwbannermedia.jpg");
+    background-image: url("/images/indeximg/codmwbannermedia.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
     height: 250px;
   }
   #slides .slide_2 {
-    background-image: url("/Gamehub/images/indeximg/fifamediacomp.jpg");
+    background-image: url("/images/indeximg/fifamediacomp.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
     height: 250px;
   }
   #slides .slide_3 {
-    background-image: url("/Gamehub/images/indeximg/cyberpunkmediacomp.jpg");
+    background-image: url("/images/indeximg/cyberpunkmediacomp.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
     height: 250px;
   }
-  .slidebutton {
-    margin-top: 180px;
+  button {
+    padding: 10px 15px;
+    border-radius: 28px;
+    border-style: solid;
+    border-color: #1b203d;
+    border-width: 2px;
+    font-family: "RalewayLightBold", sans-serif;
+    font-size: 15px;
   }
   div#bullets {
     margin-top: 25px;
@@ -195,8 +201,7 @@
 }
 
 /* IMAGE CAROUSEL END */
-
-.products {
+.trendinggrid {
   display: grid;
   grid-template-areas: "1 2 3 4 5 6";
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -205,81 +210,30 @@
   height: auto;
   margin-top: 15px;
 }
-
-.product {
-  position: relative;
+.trendgridAC {
+  grid-area: 1;
 }
-
-.product-price {
-  font-family: Arial, Helvetica, sans-serif !important;
-  font-weight: 700;
-  font-size: 25px;
-  color: #1b203d;
-  letter-spacing: -1px;
-  width: 100%;
+.trendgridTLOU {
+  grid-area: 2;
 }
-
-.prodname {
-  font-weight: normal;
-  font-size: 20px;
-  color: #1b203d;
-  text-transform: none;
+.trendgridGhosts {
+  grid-area: 3;
+}
+.trendgridfall {
+  grid-area: 4;
+}
+.trendgridGH3 {
+  grid-area: 5;
+}
+.trendgridSM64 {
+  grid-area: 6;
+}
+.phototag p {
+  text-transform: uppercase;
   font-family: "RalewayBold", sans-serif;
   margin: 0;
 }
-
-.addcart-button {
-  color: #1b203d;
-  background-color: #fbfcff;
-  border: solid;
-  border-radius: 6px;
-  font-weight: bold;
-  height: 50px;
-  text-transform: uppercase;
-  font-family: "Raleway", sans-serif;
-  width: 100%;
-  margin-top: 300px;
-  transition: 0.2s ease;
-  position: absolute;
-  bottom: -50px;
-}
-
-.addcart-button:hover {
-  cursor: pointer;
-  color: #fbfcff;
-  background-color: #1b203d;
-  border: none;
-  font-size: 16px;
-}
-.addcart-button2 {
-  color: #1b203d;
-  background-color: #fbfcff;
-  border: solid;
-  border-radius: 6px;
-  font-weight: bold;
-  height: 50px;
-  text-transform: uppercase;
-  font-family: "Raleway", sans-serif;
-  width: 100%;
-  margin-top: 300px;
-  transition: 0.2s ease;
-  position: absolute;
-  bottom: -50px;
-}
-.addcart-button2:hover {
-  cursor: pointer;
-  color: #fbfcff;
-  background-color: #1b203d;
-  border: none;
-  font-size: 16px;
-}
-.product img {
-  width: 100%;
-  height: auto;
-  min-width: 100px;
-}
-
-.plusprice {
+.pricetag p {
   text-transform: uppercase;
   font-family: "RalewayBold", sans-serif;
   margin: 0;
@@ -287,88 +241,6 @@
   color: #4e4e4e;
   letter-spacing: 0px;
   margin-top: 5px;
-}
-
-.linebreak {
-  border-top: #b1b1b1;
-  border-width: 2px 0px 0px 0px;
-  border-style: solid;
-  margin: 80px 0px 60px 0px;
-  opacity: 0.7;
-}
-
-.category-products {
-  display: grid;
-  grid-template-areas: "1 2 3";
-  grid-template-columns: 1fr 1fr 1fr;
-  width: 100%;
-  grid-gap: 40px;
-  height: auto;
-}
-
-.preorders {
-  grid-area: 1;
-  display: flex;
-  flex-direction: column;
-  height: auto;
-}
-
-.nearlyNew {
-  display: flex;
-  flex-direction: column;
-  height: auto;
-}
-
-.bestSellers {
-  display: flex;
-  flex-direction: column;
-  height: auto;
-}
-
-.productwrap {
-  height: 203px;
-  border-top: #b1b1b1;
-  border-width: 2px 0px 0px 0px;
-  border-style: solid;
-  min-width: 100%;
-  margin: 30px 0px;
-  position: relative;
-}
-
-.phototag {
-  float: left;
-  margin-right: 15px;
-  position: relative;
-}
-
-.prelabel {
-  background-color: #ffab40;
-  position: absolute;
-  font-family: "RalewayBold", sans-serif;
-  font-size: 10px;
-  font-style: italic;
-  color: #1b203d;
-  padding: 8px 3px;
-  bottom: 33px;
-  right: 0px;
-}
-
-.nowrap {
-  white-space: nowrap;
-}
-
-.textwrap {
-  position: absolute;
-  bottom: 10px;
-  left: 145px;
-}
-
-span {
-  text-transform: uppercase;
-  font-family: "RalewayBold", sans-serif;
-  display: block;
-  font-size: 17px;
-  color: #4e4e4e;
 }
 .arialprice p {
   font-family: Arial, Helvetica, sans-serif !important;
@@ -382,19 +254,134 @@ span {
   text-decoration: underline;
   cursor: pointer;
 }
+.phototag img {
+  width: 100%;
+  height: auto;
+  min-width: 100px;
+}
+.linebreak {
+  border-top: #b1b1b1;
+  border-width: 2px 0px 0px 0px;
+  border-style: solid;
+  margin: 60px 0px;
+  opacity: 0.7;
+}
+@media only screen and (max-width: 1200px) {
+  .trendinggrid {
+    display: grid;
+    grid-template-areas:
+      "1 2 3"
+      "4 5 6";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px 5px;
+    width: 100%;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .trendinggrid {
+    display: grid;
+    grid-template-areas:
+      "1 2"
+      "3 4"
+      "5 6";
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px 5px;
+    width: 100%;
+    height: auto;
+  }
+}
+.gamegrid {
+  display: grid;
+  grid-template-areas: "1 2 3";
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  grid-gap: 40px;
+  height: auto;
+}
+.nowrap {
+  white-space: nowrap;
+}
+.gamegrid h1 {
+  text-transform: none;
+}
+.col1 {
+  grid-area: 1;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+.col2 {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+.col3 {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+.wrap1 {
+  height: 203px;
+  border-top: #b1b1b1;
+  border-width: 2px 0px 0px 0px;
+  border-style: solid;
+  min-width: 100%;
+  margin: 15px 0px;
+  position: relative;
+}
 
+.wrap1 p {
+  font-family: "RalewayBold", sans-serif;
+  margin: 13px 0px 15px 0px;
+}
+
+.wrap1 span {
+  text-transform: uppercase;
+  font-family: "RalewayBold", sans-serif;
+  display: block;
+  font-size: 17px;
+  color: #4e4e4e;
+}
+
+.smallpics {
+  float: left;
+  margin-right: 15px;
+  position: relative;
+}
+
+.textwrap {
+  position: absolute;
+  bottom: 10px;
+  left: 145px;
+}
+.prelabel {
+  background-color: #ffab40;
+  position: absolute;
+  font-family: "RalewayBold", sans-serif;
+  font-size: 10px;
+  font-style: italic;
+  color: #1b203d;
+  padding: 8px 3px;
+  bottom: 33px;
+  right: 0px;
+}
+.divider {
+  height: 23px;
+}
+.textwrap p {
+  margin: 0;
+}
 .discount {
   display: flex;
   flex-direction: row;
 }
-
 .oldprice {
   color: #4e4e4e;
   text-decoration: line-through;
   font-family: Arial, Helvetica, sans-serif !important;
   font-size: 17px;
 }
-
 .percenttag {
   background-color: #ffab40;
   color: #1b203d;
@@ -404,18 +391,12 @@ span {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   margin-left: 10px;
-  height: 20px;
 }
-
-.divider {
-  height: 30px;
+.nowrap {
+  white-space: nowrap;
 }
-
-/* MEDIAQUERIES */
-/* //////////////////////////// */
-
 @media only screen and (max-width: 1400px) {
-  .category-products {
+  .gamegrid {
     display: grid;
     grid-template-areas:
       "1"
@@ -429,36 +410,5 @@ span {
   }
   .nowrap {
     white-space: normal;
-  }
-  .addcart-button2 {
-    width: 50%;
-  }
-  @media only screen and (max-width: 1200px) {
-    .products {
-      display: grid;
-      grid-template-areas:
-        "1 2 3"
-        "4 5 6";
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-gap: 75px 5px;
-      width: 100%;
-      height: auto;
-    }
-  }
-  @media only screen and (max-width: 500px) {
-    .products {
-      display: grid;
-      grid-template-areas:
-        "1 2"
-        "3 4"
-        "5 6";
-      grid-template-columns: 1fr 1fr;
-      grid-gap: 75px 5px;
-      width: 100%;
-      height: auto;
-    }
-    .addcart-button2 {
-      width: 100%;
-    }
   }
 }
