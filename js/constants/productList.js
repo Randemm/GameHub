@@ -8,7 +8,7 @@ export const productArray = [
     tag: "Trending",
   },
   {
-    name: "The last of us II",
+    name: "The Last of Us II",
     image: "images/indeximg/tla2artcomp.jpg",
     category: "Action-adventure",
     id: "2",
@@ -24,7 +24,7 @@ export const productArray = [
     tag: "Trending",
   },
   {
-    name: "Fall guys",
+    name: "Fall Guys",
     image: "images/indeximg/fallcomp.jpg",
     category: "Action-adventure",
     id: "4",

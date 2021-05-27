@@ -228,6 +228,23 @@
   margin: 0;
 }
 
+.cart {
+  border: 1px solid #1b203d;
+  max-width: 600px;
+  min-width: 200px;
+  padding: 20px;
+  margin: auto;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  background-color: #fbfcff;
+  font-family: "Raleway", sans-serif;
+  display: none;
+}
+
+.cart-item {
+}
+
 .addcart-button {
   color: #1b203d;
   background-color: #fbfcff;
