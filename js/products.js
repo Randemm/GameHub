@@ -102,6 +102,7 @@ buttons.forEach(function (button) {
     );
     cartArray.push(itemToAdd);
     showCart(cartArray);
+    localStorage.setItem("cartList", JSON.stringify(cartArray));
   };
 });
 
