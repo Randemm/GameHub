@@ -34,21 +34,22 @@ var preorderProducts = productArray.filter(
 );
 preorderProducts.forEach(function (product) {
   preorderWrap.innerHTML += `
-  <div class="productwrap">
-    <button class="addcart-button2" data-product="${product.id}">Add to cart</button>
-    <div class="phototag">
-      <div class="prelabel">PRE-ORDER</div>
-      <img src="${product.image}" alt="${product.name}">
-    </div>
-    <p class="prodname">${product.name}</p>
-    <div class="textwrap">
-      <span>from</span>
-      <div class="arialprice">
-        <p>$${product.price}</p>
-      <div class="divider"></div>
+    <div onclick="location.href='product.html?id=${product.id}'" class="productwrap">
+      <div class="phototag">
+        <div class="prelabel">
+          PRE-ORDER
+        </div>
+          <img src="${product.image}" alt="${product.name}">
+        </div>
+        <p class="prodname">${product.name}</p>
+      <div class="textwrap">
+        <span>from</span>
+        <div class="arialprice">
+          <p>$${product.price}</p>
+        </div>
       </div>
-    </div>
-  </div>
+        <button class="addcart-button2" data-product="${product.id}">Add to cart</button>
+    <div class="divider"></div>
   `;
 });
 
@@ -57,8 +58,7 @@ var nearlyNewProducts = productArray.filter(
 );
 nearlyNewProducts.forEach(function (product) {
   nearlynewWrap.innerHTML += `
-  <div class="productwrap">
-  <button class="addcart-button2" data-product="${product.id}">Add to cart</button>
+  <div onclick="location.href='product.html?id=${product.id}'" class="productwrap">
     <div class="phototag">
       <img src="${product.image}" alt="${product.name}">
     </div>
@@ -67,12 +67,11 @@ nearlyNewProducts.forEach(function (product) {
       <span>from</span>
       <div class="arialprice">
         <p>$${product.price}</p>
+        </div>
       </div>
-      <div class="discount">
-    <p class="oldprice">$${product.oldPrice}</p>
-    <div class="percenttag">${product.decrease}</div>
+        <button class="addcart-button2" data-product="${product.id}">Add to cart</button>
+    <div class="divider">
     </div>
-  </div>
   `;
 });
 
@@ -80,8 +79,7 @@ var bestProducts = productArray.filter((product) => product.tag == "best");
 
 bestProducts.forEach(function (product) {
   bestWrap.innerHTML += `
-  <div class="productwrap">
-  <button class="addcart-button2" data-product="${product.id}">Add to cart</button>
+  <div onclick="location.href='product.html?id=${product.id}'" class="productwrap">
     <div class="phototag">
       <img src="${product.image}" alt="${product.name}">
     </div>
@@ -90,9 +88,11 @@ bestProducts.forEach(function (product) {
       <span>from</span>
       <div class="arialprice">
         <p>$${product.price}</p>
-    <div class="divider"></div>
-  </div>
-</div>
+        </div>
+      </div>
+        <button class="addcart-button2" data-product="${product.id}">Add to cart</button>
+    <div class="divider">
+    </div>
   `;
 });
 

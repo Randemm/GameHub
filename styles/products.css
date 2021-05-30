@@ -32,6 +32,28 @@ footer {
   letter-spacing: 1px;
   padding-top: 5px;
 }
+.price-arial {
+  font-weight: 800;
+  font-size: 25px;
+  padding-left: 20px;
+  letter-spacing: -1px;
+  width: 100%;
+  margin: auto;
+  text-align: left;
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+}
+span {
+  font-weight: 800;
+  font-size: 15px;
+  padding-left: 20px;
+  letter-spacing: -1px;
+  width: 100%;
+  margin: auto;
+  text-align: left;
+  display: block;
+  font-family: "RalewayBold", sans-serif;
+}
 .addcartkey {
   border-radius: 12px;
   height: 65px;
@@ -64,16 +86,6 @@ footer {
   text-align: left;
   padding-top: 5px;
   padding-left: 20px;
-}
-.addcartkey span {
-  font-weight: 700;
-  font-size: 16px;
-  padding-left: 20px;
-  letter-spacing: -1px;
-  width: 100%;
-  margin: auto;
-  text-align: left;
-  display: block;
 }
 .addcartkey i {
   padding-top: 15px;

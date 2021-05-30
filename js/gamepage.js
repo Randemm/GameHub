@@ -15,7 +15,7 @@ productArray.forEach((product) => {
   if (product.id === productId) {
     gameTitle.innerHTML += `${product.name}`;
     gameDescription.innerHTML += `${product.description}`;
-    gamePrice.innerHTML += `${product.price}`;
+    gamePrice.innerHTML += `$${product.price}`;
     gameImage.innerHTML += `<img src="${product.image}" alt="${product.name}" class="gamecover"/>`;
     gameVideo.innerHTML += `
     <iframe
@@ -30,3 +30,31 @@ productArray.forEach((product) => {
 `;
   }
 });
+const buttons = document.querySelectorAll("button");
+buttons.forEach(function (button) {
+  button.onclick = function (event) {
+    const itemToAdd = productArray.find(
+      (item) => item.id === event.target.dataset.product
+    );
+    cartArray.push(itemToAdd);
+    showCart(cartArray);
+    localStorage.setItem("cartList", JSON.stringify(cartArray));
+  };
+});
+function showCart(cartItems) {
+  cart.style.display = "block";
+  cartList.innerHTML = "";
+  let total = 0;
+  cartItems.forEach(function (cartElement) {
+    total += cartElement.price;
+    console.log(cartElement);
+    cartList.innerHTML += `<div class="cart-item">
+            <h4>${cartElement.name}</h4>
+            <img src ="${cartElement.image}" alt="${cartElement.name}" class="cart-image">
+            <p class="cartprice">$${cartElement.price}</p>
+            <button class="revert-button">X</button>
+          </div>
+      `;
+  });
+  totalContainer.innerHTML = `Total: $${total.toFixed(2)}`;
+}
