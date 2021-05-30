@@ -118,7 +118,7 @@ export const productArray = [
     oldPrice: 59.12,
     decrease: "-63%",
     tag: "near-new",
-    video: "https://www.youtube.com/watch?v=u4-FCsiF5x4",
+    video: "https://www.youtube.com/embed/u4-FCsiF5x4",
     description:
       "Horizon Zero Dawn is a 2017 action role-playing game developed by Guerrilla Games and published by Sony Interactive Entertainment. The plot follows Aloy, a young hunter in a world overrun by machines, who sets out to uncover her past. The player can explore the open world to discover locations and take on side quests.",
   },
