@@ -144,7 +144,7 @@
   flex-direction: column;
   padding: 120px 120px;
   padding-left: 250px;
-  background-image: url("/Gamehub/images/indeximg/gampile.jpg");
+  background-image: url("images/indeximg/gampile.jpg");
   background-size: 195px 100%;
   background-repeat: no-repeat;
 }
