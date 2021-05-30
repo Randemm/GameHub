@@ -179,7 +179,7 @@ p.sold {
   left: 100px;
   bottom: 0;
 }
-@media only screen and (max-width: 1025px) {
+@media only screen and (max-width: 1280px) {
   .profilegrid {
     display: grid;
     grid-template-areas: "1";

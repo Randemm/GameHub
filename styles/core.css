@@ -453,11 +453,18 @@ button:focus {
 
   .hamburgermenu {
     display: flex;
+    transition: 0.3s ease;
   }
   .expanded {
     z-index: 5;
     max-width: 300px;
+    position: fixed;
   }
+  .expanded i {
+    margin: 50px;
+    font-size: 65px;
+  }
+
   h1 {
     white-space: wrap;
   }
