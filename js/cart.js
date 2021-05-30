@@ -6,9 +6,12 @@ const checkoutButton = document
   .addEventListener("click", deleteCartList);
 
 let total = 0;
+
+cartContainer.innerHTML = "<h1>Shopping Cart</h1>";
 cartItems.forEach(function (cartElement) {
   total += cartElement.price;
-  cartContainer.innerHTML += `<div class="cart-item">
+  cartContainer.innerHTML += `
+  <div class="cart-item">
         <img src ="${cartElement.image}" alt="${cartElement.name}" class="cart-image">
         <h4>${cartElement.name}</h4>
         <p class="cartprice">$${cartElement.price}</p>

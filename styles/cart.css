@@ -31,6 +31,9 @@
   padding: 35px;
   box-shadow: 0px 3px 5px rgba(0, 5, 19, 0.9);
 }
+.cart-list h1 {
+  margin: 0px 0px 15px 0px;
+}
 .checkout {
   color: #fbfcff;
   background-color: #1b203d;
@@ -45,6 +48,9 @@
   width: 50%;
   display: block;
   text-align: center;
+}
+.checkout:hover {
+  cursor: pointer;
 }
 .total {
   font-family: Arial, Helvetica, sans-serif;
