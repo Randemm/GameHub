@@ -516,6 +516,9 @@ span {
   .addcart-button2 {
     width: 50%;
   }
+  .wrap {
+    display: flex;
+  }
   .cart {
     z-index: -1;
   }

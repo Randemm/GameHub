@@ -18,12 +18,14 @@ var trendingProducts = productArray.filter(
 trendingProducts.forEach(function (product) {
   productsContainer.innerHTML += `
     <div class="product">
+    <a href="product.html?id=${product.id}">
         <img src="${product.image}" alt="${product.name}">
         <p class="prodname">${product.name}</p>
         <p class="plusprice">with plus</p>
         <div class="product-price">$${product.price}</div>
+       </a>
         <button class="addcart-button" data-product="${product.id}">Add to cart</button>
-    </div>
+    </div> 
     `;
 });
 
