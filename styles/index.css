@@ -82,19 +82,19 @@ button:hover {
   color: #fff;
 }
 #slides .slide_1 {
-  background-image: url("/Gamehub/images/indeximg/codmwbannercomp.jpg");
+  background-image: url("images/indeximg/codmwbannercomp.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 #slides .slide_2 {
-  background-image: url("/Gamehub/images/indeximg/fifabannercomp.jpg");
+  background-image: url("images/indeximg/fifabannercomp.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 #slides .slide_3 {
-  background-image: url("/Gamehub/images/indeximg/cyberbannercomp.jpg");
+  background-image: url("images/indeximg/cyberbannercomp.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -151,21 +151,21 @@ button:hover {
 }
 @media screen and (max-width: 750px) {
   #slides .slide_1 {
-    background-image: url("/Gamehub/images/indeximg/codmwbannermedia.jpg");
+    background-image: url("images/indeximg/codmwbannermedia.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
     height: 250px;
   }
   #slides .slide_2 {
-    background-image: url("/Gamehub/images/indeximg/fifamediacomp.jpg");
+    background-image: url("images/indeximg/fifamediacomp.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
     height: 250px;
   }
   #slides .slide_3 {
-    background-image: url("/Gamehub/images/indeximg/cyberpunkmediacomp.jpg");
+    background-image: url("images/indeximg/cyberpunkmediacomp.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
