@@ -5,7 +5,7 @@ function validateForm() {
   var fnamePointer = "first name";
   var firstName = document.forms["contactForm"][fnamePointer].value;
   if (validateString(firstName, fnamePointer, 0)) {
-    document.getElementById("fnamedemo").innerHTML =
+    document.getElementById("fnameerror").innerHTML =
       "First name cannot be empty.";
     formError = true;
   }
@@ -13,7 +13,7 @@ function validateForm() {
   var lnamePointer = "last name";
   var lastName = document.forms["contactForm"][lnamePointer].value;
   if (validateString(lastName, lnamePointer, 0)) {
-    document.getElementById("lnamedemo").innerHTML =
+    document.getElementById("lnameerror").innerHTML =
       "Last name cannot be empty.";
     formError = true;
   }
@@ -25,14 +25,14 @@ function validateForm() {
   console.log(validateEmail(email));
 
   if (!validateEmail(email)) {
-    document.getElementById("emaildemo").innerHTML = "Email not valid.";
+    document.getElementById("emailerror").innerHTML = "Email not valid.";
     formError = true;
   }
 
   var subjectPointer = "subject";
   var subject = document.forms["contactForm"][subjectPointer].value;
   if (validateString(subject, subjectPointer, 10)) {
-    document.getElementById("subjectdemo").innerHTML =
+    document.getElementById("subjecterror").innerHTML =
       "Subject cannot be empty or less than 10 characters.";
     formError = true;
   }

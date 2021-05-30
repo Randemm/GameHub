@@ -120,5 +120,5 @@ function showCart(cartItems) {
         </div>
     `;
   });
-  totalContainer.innerHTML = `Total: $${total}`;
+  totalContainer.innerHTML = `Total: $${total.toFixed(2)}`;
 }
