@@ -260,7 +260,7 @@ button:hover {
 
 .total {
   font-family: Arial, Helvetica, sans-serif;
-  margin: 15px 0px 10px 120px;
+  margin: 15px 0px 10px 60px;
   font-weight: bolder;
   font-size: 20px;
 }
@@ -525,6 +525,9 @@ span {
   .cart {
     max-width: 100px;
   }
+  .total {
+    margin: 15px 0px 0px 30px;
+  }
   @media only screen and (max-width: 1200px) {
     .products {
       display: grid;
@@ -561,7 +564,6 @@ span {
     .cart {
       width: 50px;
       right: 10px;
-      min-width: 170px;
     }
     .cartprice {
       display: none;

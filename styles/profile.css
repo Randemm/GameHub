@@ -1,3 +1,68 @@
+.cart h4 {
+  margin: 5px 0px;
+  font-weight: bolder;
+  text-align: left;
+}
+.cart-item {
+  border-bottom: 1px solid black;
+  position: relative;
+}
+.cart-image {
+  width: 50px;
+  border-radius: 10px;
+  margin-right: 80px;
+}
+.cartheader {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 25px;
+  text-align: center;
+  border-bottom: #1b203d solid;
+  margin-bottom: 20px;
+}
+.cart {
+  border: 3px solid #1b203d;
+  -webkit-box-shadow: 0 0 6px rgb(0 0 0 / 50%);
+  border-radius: 6px;
+  max-width: 600px;
+  min-width: 200px;
+  max-height: 650px;
+  padding: 20px;
+  margin: auto;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  background-color: #fbfcff;
+  font-family: "Raleway", sans-serif;
+  display: none;
+  z-index: 3;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.revert-button {
+  position: absolute;
+  background-color: #8b0000;
+  color: #fbfcff;
+  border: none;
+  border-radius: 4px;
+  right: 1px;
+}
+.cartprice {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  float: right;
+  color: black;
+  margin: 55px 0px 0px 0px;
+}
+
+.total {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 15px 0px 10px 30px;
+  font-weight: bolder;
+  font-size: 20px;
+}
 p {
   white-space: normal;
 }
@@ -206,5 +271,33 @@ p.sold {
   .col3 {
     width: 96%;
     margin: auto;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .cart {
+    max-width: 100px;
+  }
+  @media only screen and (max-width: 500px) {
+    .cart-image {
+      display: none;
+    }
+    .revert-button {
+      top: 0px;
+    }
+    .cart {
+      width: 50px;
+      right: 10px;
+      min-width: 170px;
+    }
+    .cartprice {
+      display: none;
+    }
+    .cartheader {
+      font-size: 20px;
+    }
+    .total {
+      margin: 15px 0px 10px 25px;
+    }
   }
 }

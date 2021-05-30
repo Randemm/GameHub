@@ -131,3 +131,9 @@ function showCart(cartItems) {
   });
   totalContainer.innerHTML = `Total: $${total.toFixed(2)}`;
 }
+var currentCart = JSON.parse(localStorage.getItem("cartList"));
+
+if (currentCart.length > 0) {
+  currentCart.forEach((cartItem) => cartArray.push(cartItem));
+  showCart(currentCart);
+}
