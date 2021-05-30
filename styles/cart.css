@@ -1,0 +1,53 @@
+.cart-item {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+  background-color: rgba(128, 128, 128, 0.226);
+  border-radius: 6px;
+}
+.cart-item img {
+  width: 50px;
+  border-radius: 6px;
+}
+.cartprice {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  float: right;
+  color: black;
+  margin: 45px 0px 0px 0px;
+  position: absolute;
+  right: 185px;
+}
+.cart-item h4 {
+  margin: 5px 0px;
+  font-weight: bolder;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  margin: 22px 25px;
+}
+.cart-list {
+  margin: 15px 0px;
+}
+.checkout {
+  color: #fbfcff;
+  background-color: #1b203d;
+  border: solid;
+  border-radius: 6px;
+  font-weight: bold;
+  height: 20px;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  padding: 7px;
+  margin: auto;
+  width: 50%;
+  display: block;
+  text-align: center;
+}
+.total {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px 32px 10px 120px;
+  font-weight: bolder;
+  font-size: 20px;
+  float: right;
+}
