@@ -22,5 +22,5 @@ totalContainer.innerHTML = `Total: $${total.toFixed(2)}`;
 
 function deleteCartList() {
   window.localStorage.removeItem("cartList");
-  window.location.replace("complete.html");
+  window.location.replace("payment.html");
 }
