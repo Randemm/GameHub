@@ -104,9 +104,6 @@
   .submit {
     margin-top: 4px !important;
   }
-  .box {
-    margin: 10px !important;
-  }
 }
 @media only screen and (max-height: 840px) {
   .loginbox {
