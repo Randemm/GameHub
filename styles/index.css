@@ -523,7 +523,7 @@ span {
     display: flex;
   }
   .cart {
-    z-index: -1;
+    max-width: 100px;
   }
   @media only screen and (max-width: 1200px) {
     .products {
@@ -551,6 +551,26 @@ span {
     }
     .addcart-button2 {
       width: 100%;
+    }
+    .cart-image {
+      display: none;
+    }
+    .revert-button {
+      top: 0px;
+    }
+    .cart {
+      width: 50px;
+      right: 10px;
+      min-width: 170px;
+    }
+    .cartprice {
+      display: none;
+    }
+    .cartheader {
+      font-size: 20px;
+    }
+    .total {
+      margin: 15px 0px 10px 100px;
     }
   }
 }
