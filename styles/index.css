@@ -233,7 +233,7 @@ button:hover {
 
 .cart {
   border: 3px solid #1b203d;
-  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
   border-radius: 6px;
   max-width: 600px;
   min-width: 200px;
@@ -303,7 +303,7 @@ button:hover {
 
 .addcart-button {
   color: #1b203d;
-  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
   background-color: #fbfcff;
   border: solid;
   border-radius: 6px;
@@ -326,7 +326,7 @@ button:hover {
   font-size: 16px;
 }
 .addcart-button2 {
-  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
   color: #1b203d;
   background-color: #fbfcff;
   border: solid;
