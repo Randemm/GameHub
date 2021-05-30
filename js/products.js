@@ -34,18 +34,20 @@ var preorderProducts = productArray.filter(
 );
 preorderProducts.forEach(function (product) {
   preorderWrap.innerHTML += `
-    <div onclick="location.href='product.html?id=${product.id}'" class="productwrap">
-      <div class="phototag">
+    <div class="productwrap">
+      <div onclick="location.href='product.html?id=${product.id}'" class="phototag">
         <div class="prelabel">
           PRE-ORDER
         </div>
           <img src="${product.image}" alt="${product.name}">
         </div>
+      <div onclick="location.href='product.html?id=${product.id}'" class="game-info">
         <p class="prodname">${product.name}</p>
       <div class="textwrap">
         <span>from</span>
         <div class="arialprice">
           <p>$${product.price}</p>
+        </div>
         </div>
       </div>
         <button class="addcart-button2" data-product="${product.id}">Add to cart</button>
@@ -58,15 +60,17 @@ var nearlyNewProducts = productArray.filter(
 );
 nearlyNewProducts.forEach(function (product) {
   nearlynewWrap.innerHTML += `
-  <div onclick="location.href='product.html?id=${product.id}'" class="productwrap">
-    <div class="phototag">
+  <div class="productwrap">
+    <div onclick="location.href='product.html?id=${product.id}'" class="phototag">
       <img src="${product.image}" alt="${product.name}">
     </div>
+    <div onclick="location.href='product.html?id=${product.id}'" class="game-info">
   <p class="prodname">${product.name}</p>
     <div class="textwrap">
       <span>from</span>
       <div class="arialprice">
         <p>$${product.price}</p>
+        </div>
         </div>
       </div>
         <button class="addcart-button2" data-product="${product.id}">Add to cart</button>
@@ -79,15 +83,17 @@ var bestProducts = productArray.filter((product) => product.tag == "best");
 
 bestProducts.forEach(function (product) {
   bestWrap.innerHTML += `
-  <div onclick="location.href='product.html?id=${product.id}'" class="productwrap">
-    <div class="phototag">
+  <div class="productwrap">
+    <div onclick="location.href='product.html?id=${product.id}'" class="phototag">
       <img src="${product.image}" alt="${product.name}">
     </div>
-  <p class="prodname">${product.name}</p>
-    <div class="textwrap">
+    <div onclick="location.href='product.html?id=${product.id}'" class="game-info">
+      <p class="prodname">${product.name}</p>
+      <div class="textwrap">
       <span>from</span>
-      <div class="arialprice">
-        <p>$${product.price}</p>
+        <div class="arialprice">
+          <p>$${product.price}</p>
+          </div>
         </div>
       </div>
         <button class="addcart-button2" data-product="${product.id}">Add to cart</button>
