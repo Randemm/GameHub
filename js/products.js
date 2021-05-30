@@ -125,7 +125,7 @@ function showCart(cartItems) {
           <h4>${cartElement.name}</h4>
           <img src ="${cartElement.image}" alt="${cartElement.name}" class="cart-image">
           <p class="cartprice">$${cartElement.price}</p>
-          <button onclick=" class="revert-button">X</button>
+          <button class="revert-button">X</button>
         </div>
     `;
   });
