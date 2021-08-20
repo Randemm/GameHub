@@ -1,25 +1,13 @@
 import { productArray } from "./constants/productList.js";
+import { getList } from "./constants/productListApi.js";
 
-const productsContainer = document.querySelector(".products");
-const cart = document.querySelector(".cart");
-const cartList = document.querySelector(".cart-list");
-const totalContainer = document.querySelector(".total");
-
-let cartArray = [];
-
-const preorderWrap = document.querySelector(".preorders");
-const nearlynewWrap = document.querySelector(".nearlyNew");
-const bestWrap = document.querySelector(".bestSellers");
-
-var trendingProducts = productArray.filter(
-  (product) => product.tag == "Trending"
-);
-
-trendingProducts.forEach(function (product) {
-  productsContainer.innerHTML += `
+getList().then((list) => {
+  list.forEach((product) => {
+    if (product.categories[0].name === "trending")
+      productsContainer.innerHTML += `
     <div class="product">
     <a href="product.html?id=${product.id}">
-        <img src="${product.image}" alt="${product.name}">
+        <img src="${product.images[0].src}" alt="${product.name}">
         <p class="prodname">${product.name}</p>
         <p class="plusprice">with plus</p>
         <div class="product-price">$${product.price}</div>
@@ -27,19 +15,14 @@ trendingProducts.forEach(function (product) {
         <button class="addcart-button" data-product="${product.id}">Add to cart</button>
     </div> 
     `;
-});
-
-var preorderProducts = productArray.filter(
-  (product) => product.tag == "pre-order"
-);
-preorderProducts.forEach(function (product) {
-  preorderWrap.innerHTML += `
+    if (product.categories[0].name === "Pre-order")
+      preorderWrap.innerHTML += `
     <div class="productwrap">
       <div onclick="location.href='product.html?id=${product.id}'" class="phototag">
         <div class="prelabel">
           PRE-ORDER
         </div>
-          <img src="${product.image}" alt="${product.name}">
+          <img src="${product.images[0].src}" alt="${product.name}">
         </div>
       <div onclick="location.href='product.html?id=${product.id}'" class="game-info">
         <p class="prodname">${product.name}</p>
@@ -53,16 +36,11 @@ preorderProducts.forEach(function (product) {
         <button class="addcart-button2" data-product="${product.id}">Add to cart</button>
     <div class="divider"></div>
   `;
-});
-
-var nearlyNewProducts = productArray.filter(
-  (product) => product.tag == "near-new"
-);
-nearlyNewProducts.forEach(function (product) {
-  nearlynewWrap.innerHTML += `
+    if (product.categories[0].name === "Near-new")
+      nearlynewWrap.innerHTML += `
   <div class="productwrap">
     <div onclick="location.href='product.html?id=${product.id}'" class="phototag">
-      <img src="${product.image}" alt="${product.name}">
+      <img src="${product.images[0].src}" alt="${product.name}">
     </div>
     <div onclick="location.href='product.html?id=${product.id}'" class="game-info">
   <p class="prodname">${product.name}</p>
@@ -77,15 +55,11 @@ nearlyNewProducts.forEach(function (product) {
     <div class="divider">
     </div>
   `;
-});
-
-var bestProducts = productArray.filter((product) => product.tag == "best");
-
-bestProducts.forEach(function (product) {
-  bestWrap.innerHTML += `
+    if (product.categories[0].name === "bestseller")
+      bestWrap.innerHTML += `
   <div class="productwrap">
     <div onclick="location.href='product.html?id=${product.id}'" class="phototag">
-      <img src="${product.image}" alt="${product.name}">
+      <img src="${product.images[0].src}" alt="${product.name}">
     </div>
     <div onclick="location.href='product.html?id=${product.id}'" class="game-info">
       <p class="prodname">${product.name}</p>
@@ -100,9 +74,21 @@ bestProducts.forEach(function (product) {
     <div class="divider">
     </div>
   `;
+  });
 });
 
+const productsContainer = document.querySelector(".products");
+const cart = document.querySelector(".cart");
+const cartList = document.querySelector(".cart-list");
+const totalContainer = document.querySelector(".total");
+
+let cartArray = [];
+
+const preorderWrap = document.querySelector(".preorders");
+const nearlynewWrap = document.querySelector(".nearlyNew");
+const bestWrap = document.querySelector(".bestSellers");
 const buttons = document.querySelectorAll("button");
+
 buttons.forEach(function (button) {
   button.onclick = function (event) {
     const itemToAdd = productArray.find(
